@@ -23,6 +23,7 @@ app.use((req, res, next) => {
   next()
 })
 
+// cors
 app.use(
   cors({
     origin: ["http://127.0.0.1:3000", "http://localhost:3000"],
