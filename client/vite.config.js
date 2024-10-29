@@ -15,7 +15,7 @@ export default defineConfig({
     host: true,
     origin: "http://0.0.0.0:3000",
     proxy: {
-      "/api": "http://localhost:8080",
+      "/api": "todo-new-theta.vercel.app",
     },
   },
   define: {
