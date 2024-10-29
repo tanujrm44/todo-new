@@ -31,8 +31,10 @@ const router = createBrowserRouter(
       </Route>
 
       {/* Private Routes */}
-      <Route element={<App />}>
-        <Route path="/" element={<HomePage />} />
+      <Route element={<PrivateRoutes />}>
+        <Route element={<App />}>
+          <Route path="/" element={<HomePage />} />
+        </Route>
       </Route>
 
       <Route path="/server-error" element={<ServerError />} />
